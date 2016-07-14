@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="training3exercise1" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Wiw-vw-1WW">
+                                <rect key="frame" x="257" y="151" width="47" height="45"/>
+                                <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="Wiw-vw-1WW" secondAttribute="height" multiplier="21:20" id="cEc-eY-R0U"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cAx-Lf-Ac4">
+                                <rect key="frame" x="136" y="523" width="48" height="45"/>
+                                <color key="backgroundColor" red="0.97050731140000002" green="0.23048821820000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="cAx-Lf-Ac4" secondAttribute="height" multiplier="18:17" id="2zD-se-JxD"/>
+                                </constraints>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="I have some longer text here that I want to wrap onto multiple lines" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wkT-lo-93M">
+                                <rect key="frame" x="16" y="149" width="215" height="60"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="40" id="RgY-kh-yni"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jl5-9c-hce">
+                                <rect key="frame" x="16" y="30" width="288" height="90"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="cAx-Lf-Ac4" secondAttribute="bottom" id="0Po-wB-2Nc"/>
+                            <constraint firstItem="Wiw-vw-1WW" firstAttribute="trailing" secondItem="jl5-9c-hce" secondAttribute="trailing" id="1rh-SS-KNY"/>
+                            <constraint firstItem="cAx-Lf-Ac4" firstAttribute="height" secondItem="Wiw-vw-1WW" secondAttribute="height" id="3E0-O4-lBv"/>
+                            <constraint firstItem="Wiw-vw-1WW" firstAttribute="height" secondItem="wkT-lo-93M" secondAttribute="height" multiplier="0.75" id="5So-dt-UEf"/>
+                            <constraint firstItem="jl5-9c-hce" firstAttribute="height" secondItem="wkT-lo-93M" secondAttribute="height" multiplier="1.5" id="6ke-PU-uSa"/>
+                            <constraint firstItem="Wiw-vw-1WW" firstAttribute="leading" secondItem="wkT-lo-93M" secondAttribute="trailing" constant="26" id="RA6-ja-98L"/>
+                            <constraint firstItem="wkT-lo-93M" firstAttribute="leading" secondItem="jl5-9c-hce" secondAttribute="leading" id="SMq-JL-jZx"/>
+                            <constraint firstItem="cAx-Lf-Ac4" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="aPE-Th-oPD"/>
+                            <constraint firstItem="Wiw-vw-1WW" firstAttribute="top" secondItem="jl5-9c-hce" secondAttribute="bottom" constant="31" id="flB-qB-2nG"/>
+                            <constraint firstItem="wkT-lo-93M" firstAttribute="top" secondItem="jl5-9c-hce" secondAttribute="bottom" constant="29" id="frk-is-odB"/>
+                            <constraint firstItem="jl5-9c-hce" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="pDG-jY-uEM"/>
+                            <constraint firstItem="jl5-9c-hce" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="0.9" id="upb-Y6-dni"/>
+                            <constraint firstItem="jl5-9c-hce" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="10" id="xVj-3f-lt5"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="162" y="330"/>
+        </scene>
+    </scenes>
+</document>
